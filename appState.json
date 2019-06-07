@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "8027038c-b4f1-494d-87b1-71ece86e2678": {
+        "id": "8027038c-b4f1-494d-87b1-71ece86e2678",
+        "parent": null,
+        "name": "sample-project-singa",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "2e20a9ef-892f-4710-b97a-49754908fe99"
+        ],
+        "isRemovable": false,
+        "filePath": "sample-project-singa"
+      },
+      "2e20a9ef-892f-4710-b97a-49754908fe99": {
+        "id": "2e20a9ef-892f-4710-b97a-49754908fe99",
+        "parent": "8027038c-b4f1-494d-87b1-71ece86e2678",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sample-project-singa/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "43bb45b0-1278-4f75-aa3e-35fe3c1d6543": {
+        "id": "43bb45b0-1278-4f75-aa3e-35fe3c1d6543",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.sampleProjectSingafunction = require(\"./sample-project-singa/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "8027038c-b4f1-494d-87b1-71ece86e2678",
+    "openFiles": [
+      "2e20a9ef-892f-4710-b97a-49754908fe99"
+    ],
+    "currentFileId": "2e20a9ef-892f-4710-b97a-49754908fe99",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_REGION",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sample-project-singa",
+    "projectDescription": "this is the ",
+    "projectVersion": "1.0.0",
+    "projectRegion": "asia-southeast1",
+    "platform": "GCP",
+    "platformRegions": {
+      "AWS": "ap-southeast-1"
+    },
+    "lastSave": 1559890378883
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sample-project-singa",
+      "url": "https://github.com/HirudineeADRT/sample-project-singa-sigma-1559890385921"
+    }
+  }
+}
